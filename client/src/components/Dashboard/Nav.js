@@ -1,7 +1,7 @@
 import React from 'react'
 // import './homepage.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from '../images/logo.png'
+import logo from '../Images/logo.png'
 
 
 function hnav() {

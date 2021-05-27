@@ -1,10 +1,8 @@
 import React from 'react'
-// import './homepage.css'
+import './Nav.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from '../images/logo.png'
-
-
-function Cnav() {
+import logo from '../Images/logo.png'
+function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
@@ -26,17 +24,17 @@ function Cnav() {
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <a className="nav-link" href="#work">
-              Home
+              About Us
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#contact">
-              Review Tickets
+              Our Mission
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="./images/resume.pdf">
-              Logout
+              Customer Feedback
             </a>
           </li>
         </ul>
@@ -45,4 +43,4 @@ function Cnav() {
   );
 }
 
-export default Cnav;
+export default Nav;

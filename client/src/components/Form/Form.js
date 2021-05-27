@@ -1,7 +1,9 @@
 import React from 'react'
-import './Login.css'
+import './Form.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-function Login() {
+import Navbar from "../Reuse/Nav";
+
+function Form() {
   return (
     <div className="container">
       <form>
@@ -24,4 +26,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Form;

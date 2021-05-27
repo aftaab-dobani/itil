@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/aftaab-dobani/itil#readme",
   "dependencies": {
+    "bootstrap": "^5.0.1",
     "concurrently": "^6.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.12.11"
+    "mongoose": "^5.12.11",
+    "react-bootstrap": "^1.6.0"
   }
 }

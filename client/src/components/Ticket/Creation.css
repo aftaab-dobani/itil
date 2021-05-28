@@ -1,11 +1,16 @@
-.formBox {
+.creation {
     max-width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex;
     padding: 50px;
+    border-radius: 69px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
     background-color: var(--dark);
+    min-block-size: 5px;
 }
 
 h1 {

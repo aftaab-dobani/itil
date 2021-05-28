@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function Table() {
   return (
       <div className="tablecontainer">
-        <table class="table">
+        <table className="table">
         <thead>
           <tr>
             <th scope="col">#</th>

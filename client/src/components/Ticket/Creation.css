@@ -11,6 +11,7 @@
     margin-top: 40px;
     background-color: var(--dark);
     min-block-size: 5px;
+    box-shadow: 5px 10px 18px rgb(145, 145, 145);
 }
 
 h1 {

@@ -45,7 +45,7 @@ export const CreateTicket = ({handleOnSubmit, handleOnChange, frmDt}) => {
             required
             />
           </Form.Group>
-          <Form.File id="exampleFormControlFile1" label="Insert file here" />
+          <Form.File id="exampleFormControlFile1" label="file here" />
           <Button type="Submit" block>Submit Ticket</Button>
         </Form>
     

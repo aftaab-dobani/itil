@@ -1,33 +1,62 @@
 import React from "react";
 import "./Creation.css";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Jumbotron, Form, Button, Row, Col } from "react-bootstrap";
+import PropTypes from 'prop-types'
 
-export const CreateTicket = () => {
-  return (
-    <Form className="formBox">
-      <h1>Submit Ticket</h1>
-      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label className="heading">Name</Form.Label>
-        <Form.Control type="name" placeholder="Full Name" />
-      </Form.Group>
+export const CreateTicket = ({handleOnSubmit, handleOnChange, frmDt}) => {
+  console.log(frmDt)
+  return <Jumbotron>
+    <Form autoComplete="off" onSubmit={handleOnSubmit}>
+          <Form.Group as={Row}>
+            <Form.Label column sm={3}>Subject</Form.Label>
+            <Col sm={9}>
+            <Form.Control
+            name="issue"
+            value={frmDt.issue}
+            onChange ={handleOnChange}
+            placeholder="Enter Subject"
+            required
+            />
+            </Col>
+          </Form.Group>
 
-      <Form.Group controlId="exampleForm.ControlInput1">
-        <Form.Label className="heading">Email</Form.Label>
-        <Form.Control type="email" placeholder="name@example.com" />
-      </Form.Group>
+          <Form.Group as={Row}>
+            <Form.Label column sm={3}>Date Found</Form.Label>
+            <Col sm={9}>
+            <Form.Control
+            type="date"
+            name="foundDate"
+            value={frmDt.date}
+            onChange ={handleOnChange}
+            required
+            />
+            </Col>
+          </Form.Group>
 
-      <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label className="heading">Description</Form.Label>
-        <Form.Control as="textarea" rows={10} />
-      </Form.Group>
+          <Form.Group>
+            <Form.Label>Description</Form.Label>
+            <Form.Control
+            as="textarea"
+            name="description"
+            rows="7"
+            value={frmDt.description}
+            onChange ={handleOnChange}
+            placeholder="Enter Password"
+            required
+            />
+          </Form.Group>
 
-      
-      <Button className="button" type="Submit">Submit Ticket</Button>
-      
-
-
-    </Form>
-  );
+          <Button type="Submit" block>Submit Ticket</Button>
+        </Form>
+    
+    
+    </Jumbotron>
 };
+
+// CreateTicket.PropTypes = {
+//   handleOnSubmit: PropTypes.func.isRequired,
+//   handleOnChange: PropTypes.func.isRequired,
+//   frmDt: PropTypes.func.isRequired,
+
 
 export default CreateTicket;

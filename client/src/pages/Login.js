@@ -5,6 +5,7 @@ import Jumbotron from "../components/Form/Jumbotron";
 import Form from "../components/Form/Form";
 //Re Use Component
 import Navbar from "../components/Form/Nav";
+import { Col } from "react-bootstrap";
 
 export const DefaultLayout = () => {
   const [username, setUsername] = useState("");

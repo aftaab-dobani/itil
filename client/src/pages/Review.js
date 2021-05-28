@@ -8,6 +8,8 @@ import Navbar from "../components/Reuse/Nav"
 export const ReviewLayout = () => {
     return (
         <div>
+
+            <Navbar />
             
         </div>
     )

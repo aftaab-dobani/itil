@@ -6,7 +6,7 @@
     --light: rgba(238, 238, 247, 1);
 }
 
-.logincontainer {
+.formBox {
     max-width: auto;
     display: flex;
     flex-direction: column;
@@ -15,3 +15,4 @@
     padding: 50px;
     background-color: var(--dark);
 }
+

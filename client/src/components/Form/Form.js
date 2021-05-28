@@ -1,29 +1,49 @@
-import React from 'react'
+import react from 'react'
 import './Form.css'
 import "bootstrap/dist/css/bootstrap.min.css";
+import {Container, Row, Col, Form, Button} from "react-bootstrap"
 import Navbar from "../Reuse/Nav";
 
-function Form() {
+export const formBox = ({handleOnChange, username, password}) => {
   return (
-    <div className="container">
-      <form>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"></input>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </div>
-  );
-}
+    <Container className="formBox">
+      <Row>
+        <Col>
+        <h1> User Login </h1>
+        <hr />
+        <Form>
+          <Form.Group>
+            <Form.Label>Username</Form.Label>
+            <Form.Control
+            type="username"
+            name="username"
+            value={username}
+            onChange = {handleOnChange}
+            placeholder="Enter Username"
+            required
+            />
+          </Form.Group>
 
-export default Form;
+          <Form.Group>
+            <Form.Label>Password</Form.Label>
+            <Form.Control
+            type="password"
+            name="password"
+            value={password}
+            onChange = {handleOnChange}
+            placeholder="Enter Password"
+            required
+            />
+          </Form.Group>
+
+          <Button type="Submit">Login</Button>
+        </Form>
+        </Col>
+      </Row>
+
+      
+    </Container>
+  )
+}
+  
+export default formBox;

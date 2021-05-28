@@ -18,7 +18,7 @@ export const formBox = ({handleOnChange, username, password}) => {
             type="username"
             name="username"
             value={username}
-            onChange = {handleOnChange}
+            onChange ={handleOnChange}
             placeholder="Enter Username"
             required
             />
@@ -30,7 +30,7 @@ export const formBox = ({handleOnChange, username, password}) => {
             type="password"
             name="password"
             value={password}
-            onChange = {handleOnChange}
+            onChange ={handleOnChange}
             placeholder="Enter Password"
             required
             />

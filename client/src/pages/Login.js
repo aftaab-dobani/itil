@@ -12,8 +12,20 @@ export const DefaultLayout = () => {
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    if(name === "username")
+    setUsername(value) 
+    else if(name === "password" )
+    setPassword(value)
+
   };
+
+//   const handleOnSubmit = e => {
+//       e.preventDefault()
+
+//       if(!username || !password){
+//           alert("Fill out the login form!");
+//       }
+//   };
 
   return (
     <div>

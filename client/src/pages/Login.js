@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Jumbotron from "../components/Form/Jumbotron";
 import Form from "../components/Form/Form";
 //Re Use Component
-import Navbar from "../components/Reuse/Nav";
+import Navbar from "../components/Form/Nav";
 
 export const DefaultLayout = () => {
   const [username, setUsername] = useState("");

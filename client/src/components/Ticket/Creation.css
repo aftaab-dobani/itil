@@ -1,4 +1,4 @@
-/* .formBox {
+.formBox {
     max-width: auto;
     display: flex;
     flex-direction: column;
@@ -6,4 +6,17 @@
     align-items: center;
     padding: 50px;
     background-color: var(--dark);
-} */
+}
+
+h1 {
+    color: white;
+}
+
+.heading {
+    color: white;
+}
+
+.button {
+    background-color: white;
+    color: turquoise;
+}

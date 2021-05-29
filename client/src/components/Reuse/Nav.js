@@ -25,17 +25,22 @@ function hnav() {
       <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link" href="#work">
+            <a className="nav-link" href="#">
+              Create Ticket
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">
               Dashboard
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#contact">
+            <a className="nav-link" href="#">
               Tickets
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="./images/resume.pdf">
+            <a className="nav-link" href="#">
               Logout
             </a>
           </li>

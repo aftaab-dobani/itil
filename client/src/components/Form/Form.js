@@ -2,7 +2,7 @@ import react from 'react'
 import './Form.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Container, Row, Col, Form, Button} from "react-bootstrap"
-import Navbar from "../Reuse/Nav";
+import Navbar from "./Nav";
 
 export const formBox = ({handleOnChange, username, password}) => {
   return (

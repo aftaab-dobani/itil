@@ -3,6 +3,7 @@ import React, {useEffect, useState} from "react";
 import Creation from "../components/Ticket/Creation"
 //Re Use Component 
 import Navbar from "../components/Reuse/Nav"
+import Footer from "../components/Reuse/Footer";
 import { Form } from "react-bootstrap";
 
 
@@ -37,6 +38,7 @@ export const TicketLayout = () => {
             <Creation handleOnChange={handleOnChange}
             handleOnSubmit={handleOnSubmit}
             frmDt = {frmData} />
+            <Footer />
 
             
         </div>

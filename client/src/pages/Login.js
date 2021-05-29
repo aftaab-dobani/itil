@@ -5,6 +5,7 @@ import Jumbotron from "../components/Form/Jumbotron";
 import Form from "../components/Form/Form";
 //Re Use Component
 import Navbar from "../components/Form/Nav";
+import Footer from "../components/Reuse/Footer";
 import { Col } from "react-bootstrap";
 
 export const DefaultLayout = () => {
@@ -37,6 +38,7 @@ export const DefaultLayout = () => {
         username={username}
         password={password}
       />
+      <Footer />
     </div>
   );
 };

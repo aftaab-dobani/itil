@@ -44,7 +44,7 @@ function Test() {
         <thead>
           <tr>
             <th>#</th>
-            <th>Namne</th>
+            <th>Name</th>
             <th>Issue</th>
             <th>Created</th>
             <th>Severity</th>

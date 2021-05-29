@@ -9,9 +9,7 @@ export const DashboardLayout = () => {
     return (
         <div>
             <Nav />
-            <Slides />
-            <Table />
-            <Footer />
+            <Dashboard />
         </div>
     )
 }

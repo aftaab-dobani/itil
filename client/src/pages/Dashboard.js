@@ -1,15 +1,13 @@
 import React, {component} from "react"; 
 
 import Nav from "../components/Reuse/Nav"
-import Slides from "../components/Dashboard/Slides"
-import Table from "../components/Dashboard/Table"
+import Dashboard from '../components/Dashboard/Dashboard'
 
 export const DashboardLayout = () => {
     return (
         <div>
             <Nav />
-            <Slides />
-            <Table />
+            <Dashboard />
         </div>
     )
 }

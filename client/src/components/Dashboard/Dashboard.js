@@ -1,8 +1,8 @@
 import React from "react";
-import './dashboard.css'
-import cat from '../Images/cat.jpg'
-import fill from '../Images/fill.jpg'
-import mountain from '../Images/mountain.jpg'
+import "./dashboard.css";
+import cat from "../Images/cat.jpg";
+import fill from "../Images/fill.jpg";
+import mountain from "../Images/mountain.jpg";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -21,7 +21,7 @@ import logo from "../Images/logo.png";
 
 function Test() {
   return (
-    <Form className='form'>
+    <Form className="form">
       <Alert variant="dark" className="alert">
         <Alert.Heading>Welcome to ITIL Ticketing Service</Alert.Heading>
         <p>
@@ -35,11 +35,16 @@ function Test() {
           nice and tidy.
         </p>
       </Alert>
+      <div className="mb-2">
+    <Button variant="primary" size="lg">
+      Create Ticket
+    </Button>{' '}
+  </div>
       <Table striped bordered hover="sm" className="tablecontainer">
         <thead>
           <tr>
             <th>#</th>
-            <th>Namne</th>
+            <th>Name</th>
             <th>Issue</th>
             <th>Created</th>
             <th>Severity</th>

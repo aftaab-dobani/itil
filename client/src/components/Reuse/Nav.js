@@ -1,8 +1,9 @@
-import React from 'react'
+import React from "react";
 // import './homepage.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from '../Images/logo.png'
-
+import logo from "../Images/logo.png";
+import { LinkContainer } from "react-router-bootstrap";
+import { Nav } from "react-bootstrap";
 
 function hnav() {
   return (
@@ -22,22 +23,25 @@ function hnav() {
         <span className="navbar-toggler-icon"></span>
       </button>
 
-      <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Dashboard
-            </a>
+            <LinkContainer to="/dashboard">
+              <Nav.Link>Dashboard</Nav.Link>
+            </LinkContainer>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Tickets
-            </a>
+            <LinkContainer to="ticket">
+              <Nav.Link>Tickets</Nav.Link>
+            </LinkContainer>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              Logout
-            </a>
+            <LinkContainer to="/">
+              <Nav.Link>Logout</Nav.Link>
+            </LinkContainer>
           </li>
         </ul>
       </div>

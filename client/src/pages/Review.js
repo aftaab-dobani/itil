@@ -3,6 +3,7 @@ import React, {component} from "react";
 
 //Re Use Component 
 import Navbar from "../components/Reuse/Nav"
+import Review from '../components/Review/Review'
 import Footer from "../components/Reuse/Footer";
 
 
@@ -11,6 +12,7 @@ export const ReviewLayout = () => {
         <div>
 
             <Navbar />
+            <Review />
             <Footer />
             
         </div>

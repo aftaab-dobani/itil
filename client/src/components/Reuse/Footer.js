@@ -3,10 +3,10 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col">
+    <footer className="footer">
+    <div className="container">
+      <div className="row">
+        <div className="footer-col">
           <h4>company</h4>
           <ul>
             <li><a href="#">about us</a></li>
@@ -14,7 +14,7 @@ export const Footer = () => {
             <li><a href="#">privacy policy</a></li>
           </ul>
         </div>
-        <div class="footer-col">
+        <div className="footer-col">
           <h4>get help</h4>
           <ul>
             <li><a href="#">FAQ</a></li>

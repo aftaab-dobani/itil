@@ -8,13 +8,13 @@ export const CreateTicket = ({handleOnSubmit, handleOnChange, frmDt}) => {
   return <Jumbotron className="creation">
     <Form autoComplete="off" onSubmit={handleOnSubmit}>
           <Form.Group as={Row}>
-            <Form.Label column sm={3}>Name:</Form.Label>
+            <Form.Label column sm={3}>Subject:</Form.Label>
             <Col sm={9}>
             <Form.Control
             name="issue"
             value={frmDt.issue}
             onChange ={handleOnChange}
-            placeholder="Enter Name"
+            placeholder="Enter Subject"
             required
             />
             </Col>

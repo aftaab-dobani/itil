@@ -3,6 +3,7 @@ import './Form.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import {Container, Row, Col, Form, Button} from "react-bootstrap"
 import Navbar from "./Nav";
+import { Link } from "react-router-dom";
 
 export const formBox = ({handleOnChange, username, password}) => {
   return (
@@ -35,8 +36,9 @@ export const formBox = ({handleOnChange, username, password}) => {
             required
             />
           </Form.Group>
-
+          <Link to="/dashboard">
           <Button type="Submit">Login</Button>
+          </Link>
         </Form>
         </Col>
       </Row>

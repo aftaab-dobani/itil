@@ -3,6 +3,7 @@ import "./dashboard.css";
 import cat from "../Images/cat.jpg";
 import fill from "../Images/fill.jpg";
 import mountain from "../Images/mountain.jpg";
+import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
@@ -36,10 +37,12 @@ function Test() {
         </p>
       </Alert>
       <div className="mb-2">
-    <Button variant="primary" size="lg">
-      Create Ticket
-    </Button>{' '}
-  </div>
+        <Link to="/ticket">
+          <Button variant="primary" size="lg">
+            Create Ticket
+          </Button>{" "}
+        </Link>
+      </div>
       <Table striped bordered hover="sm" className="tablecontainer">
         <thead>
           <tr>

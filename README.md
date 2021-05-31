@@ -3,19 +3,25 @@
 ## Description
 INITL
 
-![alt text](homepage.png)
+![alt text](./images/homepage.png)
 
-![alt text](ticket.png)
+![alt text](./images/ticket.png)
 
-![alt text](dashboard.png)
+![alt text](./images/dashboard.png)
 
 
 # Install
 - Install Dependencies:
-- `NPM Install`
+-  `NPM Install`
 
 - Start Server:
-- `NPM Start`
+-  `NPM Start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
 
 
@@ -23,19 +29,25 @@ INITL
 
 - **Aftaab Dobani**
 - [GitHub](https://github.com/aftaab-dobani)
-- ![alt text](taab.jpg)
+- ![alt text](./images/taab.jpg)
 - **Brian Morgan**
 - [GitHub](https://github.com/N-Person)
-- ![alt text](brian.jpg)
+- ![alt text](./images/brian.jpg)
 - **Nick Ivaniuc**
 - [GitHub](https://github.com/nivaniuc)
-- ![alt text](nick.jpg)
+- ![alt text](./images/nick.jpg)
 - **Jonathan Agatston**
 - [GitHub](https://github.com/jagatston)
-- ![alt text](jag.jpg)
+- ![alt text](./images/jag.jpg)
 - **Steven Releford**
-- ![alt text](steven.jpg)
+- ![alt text](./images/steven.jpg)
 - [GitHub](https://github.com/IOSteve)
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 # License

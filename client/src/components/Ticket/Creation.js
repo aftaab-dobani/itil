@@ -1,6 +1,7 @@
 import React from "react";
 import "./Creation.css";
 import { Jumbotron, Form, Button, Row, Col } from "react-bootstrap";
+import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 export const CreateTicket = ({handleOnSubmit, handleOnChange, frmDt}) => {
@@ -46,7 +47,10 @@ export const CreateTicket = ({handleOnSubmit, handleOnChange, frmDt}) => {
             />
           </Form.Group>
           <Form.File id="exampleFormControlFile1" label="Choose file as needed" />
+          <Link to = '/dashboard'>
           <Button type="Submit" block>Submit Ticket</Button>
+          </Link>
+
         </Form>
     
     

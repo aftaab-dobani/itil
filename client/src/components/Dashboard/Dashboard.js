@@ -1,8 +1,8 @@
 import React from "react";
 import "./dashboard.css";
-import cat from "../Images/download.jpg";
-import fill from "../Images/download2.jpg";
-import mountain from "../Images/download3.jpg";
+import cat from "../Images/download.png";
+import fill from "../Images/download2.png";
+import mountain from "../Images/download3.png";
 import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,6 +17,13 @@ import {
   CarouselItem,
   CarouselProps,
   Alert,
+  Accordion,
+  Card,
+  CardHeader,
+  CardDeck,
+  CardFooter,
+  AccordionCollapse,
+  AccordionToggle,
 } from "react-bootstrap";
 import logo from "../Images/logo.png";
 
@@ -70,17 +77,114 @@ function Test() {
           </tr>
         </tbody>
       </Table>
-      <Carousel className="containerBox">
-        <Carousel.Item interval={1000}>
-          <img className="img" src={cat} alt="First slide" />
-        </Carousel.Item>
-        <Carousel.Item interval={500}>
-          <img className="img" src={fill} alt="Second slide" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="img" src={mountain} alt="Third slide" />
-        </Carousel.Item>
-      </Carousel>
+      <Accordion defaultActiveKey="0">
+          <Card>
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Review Current Outgoing Tickets
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <CardDeck>
+                <Card>
+                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                  </Card.Footer>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in to
+                      additional content.{" "}
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                  </Card.Footer>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This card has even longer
+                      content than the first to show that equal height action.
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                  </Card.Footer>
+                </Card>
+              </CardDeck>
+            </Accordion.Collapse>
+          </Card>
+      </Accordion>
+      <Accordion defaultActiveKey="0">
+          <Card>
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Review Current Outgoing Tickets
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <CardDeck>
+                <Card>
+                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit
+                      longer.
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                  </Card.Footer>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This card has supporting text below as a natural lead-in to
+                      additional content.{" "}
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                  </Card.Footer>
+                </Card>
+                <Card>
+                  <Card.Img variant="top" src="holder.js/100px160" />
+                  <Card.Body>
+                    <Card.Title>Card title</Card.Title>
+                    <Card.Text>
+                      This is a wider card with supporting text below as a natural
+                      lead-in to additional content. This card has even longer
+                      content than the first to show that equal height action.
+                    </Card.Text>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                  </Card.Footer>
+                </Card>
+              </CardDeck>
+            </Accordion.Collapse>
+          </Card>
+      </Accordion>
     </Form>
   );
 }

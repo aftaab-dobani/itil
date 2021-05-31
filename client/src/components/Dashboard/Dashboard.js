@@ -1,8 +1,8 @@
 import React from "react";
 import "./dashboard.css";
-import cat from "../Images/cat.jpg";
-import fill from "../Images/fill.jpg";
-import mountain from "../Images/mountain.jpg";
+import cat from "../Images/download.jpg";
+import fill from "../Images/download2.jpg";
+import mountain from "../Images/download3.jpg";
 import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,15 +26,12 @@ function Test() {
       <Alert variant="dark" className="alert">
         <Alert.Heading>Welcome to ITIL Ticketing Service</Alert.Heading>
         <p>
-          Aww yeah, you successfully read this important alert message. This
-          example text is going to run a bit longer so that you can see how
-          spacing within an alert works with this kind of content.
+          Having an issue with a database problem? Getting an error trying to
+          commit a change? Reach out to one of our Technical assistants and they
+          will be able to help you as soon as possible.
         </p>
         <hr />
-        <p className="mb-0">
-          Whenever you need to, be sure to use margin utilities to keep things
-          nice and tidy.
-        </p>
+        <p className="mb-0">Whatever you need is right at your fingertips.</p>
       </Alert>
       <div className="mb-2">
         <Link to="/ticket">
@@ -47,63 +44,41 @@ function Test() {
         <thead>
           <tr>
             <th>#</th>
-            <th>Name</th>
-            <th>Issue</th>
-            <th>Created</th>
-            <th>Severity</th>
-            <th>Office</th>
+            <th>Subject</th>
+            <th>Status</th>
+            <th>Open Date</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Mike Oxlong</td>
-            <td>Styling Error</td>
+            <td>Server Backend</td>
+            <td>Pending Response</td>
             <td>5/28/21</td>
-            <th>Major</th>
-            <th>Front End</th>
           </tr>
           <tr>
             <td>2</td>
-            <td>Steve Buschemi</td>
-            <td>DB Routing</td>
+            <td>Issue with Certificate</td>
+            <td>Pending Response</td>
             <td>5/28/21</td>
-            <th>Major</th>
-            <th>Back End</th>
           </tr>
           <tr>
             <td>3</td>
-            <td>Joe Rogan</td>
-            <td> Server Bug</td>
+            <td>Styling Error</td>
+            <td>Pending Response</td>
             <td>5/28/21</td>
-            <th>Major</th>
-            <th>Back End</th>
           </tr>
         </tbody>
       </Table>
       <Carousel className="containerBox">
         <Carousel.Item interval={1000}>
           <img className="img" src={cat} alt="First slide" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
           <img className="img" src={fill} alt="Second slide" />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img className="img" src={mountain} alt="Third slide" />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </Form>

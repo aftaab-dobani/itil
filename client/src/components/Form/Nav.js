@@ -22,21 +22,6 @@ function Nav() {
 
       <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <a className="nav-link" href="#work">
-              About Us
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#contact">
-              Our Mission
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="./images/resume.pdf">
-              Customer Feedback
-            </a>
-          </li>
         </ul>
       </div>
     </nav>

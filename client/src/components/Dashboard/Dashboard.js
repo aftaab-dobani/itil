@@ -5,6 +5,8 @@ import fill from "../Images/download2.jpg";
 import mountain from "../Images/download3.jpg";
 import { Link } from "react-router-dom";
 
+
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   Container,
@@ -40,13 +42,31 @@ function Test() {
           </Button>{" "}
         </Link>
       </div>
+
+      <div>
+        <Form>
+          <Form.Group as ={Row}>
+            <Form.Label column ms={2}>
+              Search:{" "}
+              </Form.Label>
+            <Col ms="10">
+            <Form.Control
+            name="searchStr"
+            placeholder="Search ..."
+            />
+            </Col>
+          </Form.Group>
+        </Form>
+      </div>
+      
+
       <Table striped bordered hover="sm" className="tablecontainer">
         <thead>
           <tr>
             <th>#</th>
             <th>Subject</th>
             <th>Status</th>
-            <th>Open Date</th>
+            <th>Date Found</th>
           </tr>
         </thead>
         <tbody>
@@ -67,6 +87,18 @@ function Test() {
             <td>Styling Error</td>
             <td>Pending Response</td>
             <td>5/28/21</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Syntax Error</td>
+            <td>Completed</td>
+            <td>5/29/21</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Heroku Deployment</td>
+            <td>Completed</td>
+            <td>5/30/21</td>
           </tr>
         </tbody>
       </Table>

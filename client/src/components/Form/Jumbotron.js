@@ -5,7 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Image} from 'react-bootstrap'
 function Jumbotron() {
   return (
-  <Image src={banner} alt='BANNER' fluid className='img' />
+    <div className="jumbotron">
+  <div className="container">
+  <img src={banner} alt="BANNER"></img>  
+  </div>
+</div>
   );
 }
 

@@ -3,11 +3,11 @@
 ## Description
 INITL
 
-![alt text](homepage.png)
+![alt text](./images/homepage.png)
 
-![alt text](ticket.png)
+![alt text](./images/ticket.png)
 
-![alt text](dashboard.png)
+![alt text](./images/dashboard.png)
 
 
 # Install
@@ -29,18 +29,18 @@ You will also see any lint errors in the console.
 
 - **Aftaab Dobani**
 - [GitHub](https://github.com/aftaab-dobani)
-- ![alt text](taab.jpg)
+- ![alt text](./images/taab.jpg)
 - **Brian Morgan**
 - [GitHub](https://github.com/N-Person)
-- ![alt text](brian.jpg)
+- ![alt text](./images/brian.jpg)
 - **Nick Ivaniuc**
 - [GitHub](https://github.com/nivaniuc)
-- ![alt text](nick.jpg)
+- ![alt text](./images/nick.jpg)
 - **Jonathan Agatston**
 - [GitHub](https://github.com/jagatston)
-- ![alt text](jag.jpg)
+- ![alt text](./images/jag.jpg)
 - **Steven Releford**
-- ![alt text](steven.jpg)
+- ![alt text](./images/steven.jpg)
 - [GitHub](https://github.com/IOSteve)
 
 ## Learn More
